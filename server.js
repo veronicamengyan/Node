@@ -20,7 +20,7 @@ app.engine('handlebars', exphbs({
 }));
 app.set('view engine', 'handlebars');
 
-app.use(logger('combined'));
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(methodOverride());
 app.use(cookieParser('some-secret-value-here'));

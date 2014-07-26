@@ -14,7 +14,6 @@ App.prototype.start = function(){
         App.data = {};
 
         });
-    });
 
     App.core.vent.bind('app:start', function(options){
         App.core.vent.trigger('app:log', 'App: Starting');
